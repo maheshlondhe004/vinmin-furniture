@@ -5,9 +5,9 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { ArrowRight, Sofa, Lamp, Table } from 'lucide-react'; // Changed Couch to Sofa
 
 const featuredProducts = [
-  { id: 1, name: 'Modern Velvet Sofa', price: '$899', image: '/images/sofa.jpg', href: '/sofa-and-seating' },
-  { id: 2, name: 'Oak Dining Table', price: '$649', image: '/images/table.jpg', href: '/furniture' },
-  { id: 3, name: 'Minimalist Floor Lamp', price: '$129', image: '/images/lamp.jpg', href: '/furniture' },
+  { id: 1, name: 'Modern Velvet Sofa', price: '₹899', image: '/images/sofa.jpg', href: '/sofa-and-seating' },
+  { id: 2, name: 'Oak Dining Table', price: '₹649', image: '/images/table.jpg', href: '/furniture' },
+  { id: 3, name: 'Minimalist Floor Lamp', price: '₹129', image: '/images/lamp.jpg', href: '/furniture' },
 ];
 
 const categories = [
@@ -55,7 +55,7 @@ export default function Home() {
                 <Link key={category.name} href={category.href} className="group block">
                   <Card className="overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
                     <CardHeader className="items-center text-center p-6">
-                       <category.icon className="h-12 w-12 mb-3 text-primary transition-transform duration-300 group-hover:scale-110" />
+                       <category.icon className="h-12 w-12 mb-3 text-teal-600 transition-transform duration-300 group-hover:scale-110" />
                       <CardTitle className="text-xl font-semibold text-secondary-foreground">{category.name}</CardTitle>
                     </CardHeader>
                     <CardContent className="text-center px-6 pb-6">
@@ -88,10 +88,10 @@ export default function Home() {
                       />
                     </div>
                     <CardHeader>
-                      <CardTitle className="text-lg group-hover:text-primary transition-colors">{product.name}</CardTitle>
+                      <CardTitle className="text-lg group-hover:text-teal-600 transition-colors">{product.name}</CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-lg font-semibold text-primary">{product.price}</p>
+                      <p className="text-lg font-semibold text-teal-600">{product.price}</p>
                     </CardContent>
                  </Link>
               </Card>

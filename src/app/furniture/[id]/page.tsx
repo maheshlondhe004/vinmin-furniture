@@ -9,12 +9,12 @@ async function getFurnitureItem(id: string) {
   // Simulate fetching data based on ID
   // In a real app, you'd fetch from an API or database
   const allItems = [
-    { id: '1', name: 'Classic Wooden Chair', price: '$199', category: 'Chairs', image: 'chair1.jpg', description: 'Timeless design meets durability in this solid wood chair. Perfect for dining rooms or as an accent piece.', rating: 4.5, reviews: 120, dimensions: '35" H x 18" W x 20" D', material: 'Oak Wood' },
-    { id: '2', name: 'Modern Glass Coffee Table', price: '$299', category: 'Tables', image: 'table1.jpg', description: 'A sleek and contemporary centerpiece for your living room. Features a tempered glass top and sturdy metal frame.', rating: 4.2, reviews: 85, dimensions: '18" H x 48" W x 24" D', material: 'Glass, Metal' },
-    { id: '3', name: 'Plush Armchair', price: '$450', category: 'Seating', image: 'armchair1.jpg', description: 'Sink into ultimate comfort with this plush armchair. Soft upholstery and generous padding make it ideal for relaxation.', rating: 4.8, reviews: 210, dimensions: '32" H x 30" W x 34" D', material: 'Velvet, Wood Frame' },
+    { id: '1', name: 'Classic Wooden Chair', price: '₹199', category: 'Chairs', image: 'chair1.jpg', description: 'Timeless design meets durability in this solid wood chair. Perfect for dining rooms or as an accent piece.', rating: 4.5, reviews: 120, dimensions: '35" H x 18" W x 20" D', material: 'Oak Wood' },
+    { id: '2', name: 'Modern Glass Coffee Table', price: '₹299', category: 'Tables', image: 'table1.jpg', description: 'A sleek and contemporary centerpiece for your living room. Features a tempered glass top and sturdy metal frame.', rating: 4.2, reviews: 85, dimensions: '18" H x 48" W x 24" D', material: 'Glass, Metal' },
+    { id: '3', name: 'Plush Armchair', price: '₹450', category: 'Seating', image: 'armchair1.jpg', description: 'Sink into ultimate comfort with this plush armchair. Soft upholstery and generous padding make it ideal for relaxation.', rating: 4.8, reviews: 210, dimensions: '32" H x 30" W x 34" D', material: 'Velvet, Wood Frame' },
     // Add more items matching IDs from furniture/page.tsx and sofa-and-seating/page.tsx
-    { id: '101', name: 'Modern Velvet Sofa', price: '$899', category: 'Sofa', image: 'sofa1.jpg', description: 'Experience luxury with this modern velvet sofa. Its clean lines and soft texture elevate any living space.', rating: 4.7, reviews: 150, dimensions: '30" H x 84" W x 36" D', material: 'Velvet, Hardwood Frame' },
-    { id: '102', name: 'Leather Recliner Chair', price: '$649', category: 'Recliner', image: 'recliner1.jpg', description: 'The ultimate relaxation chair. Features smooth reclining mechanism and premium top-grain leather.', rating: 4.6, reviews: 195, dimensions: '40" H x 35" W x 38" D', material: 'Top-Grain Leather, Steel Mechanism' },
+    { id: '101', name: 'Modern Velvet Sofa', price: '₹899', category: 'Sofa', image: 'sofa1.jpg', description: 'Experience luxury with this modern velvet sofa. Its clean lines and soft texture elevate any living space.', rating: 4.7, reviews: 150, dimensions: '30" H x 84" W x 36" D', material: 'Velvet, Hardwood Frame' },
+    { id: '102', name: 'Leather Recliner Chair', price: '₹649', category: 'Recliner', image: 'recliner1.jpg', description: 'The ultimate relaxation chair. Features smooth reclining mechanism and premium top-grain leather.', rating: 4.6, reviews: 195, dimensions: '40" H x 35" W x 38" D', material: 'Top-Grain Leather, Steel Mechanism' },
     // Ensure all IDs used in listing pages have corresponding details here
   ];
 
@@ -36,7 +36,7 @@ export default async function FurnitureItemPage({ params }: { params: { id: stri
 
   return (
     <div className="content-center container py-12">
-        <Link href="/furniture" className="inline-flex items-center text-sm text-muted-foreground hover:text-primary mb-6">
+        <Link href="/furniture" className="inline-flex items-center text-sm text-muted-foreground hover:text-teal-600 mb-6">
             <ChevronLeft className="h-4 w-4 mr-1" />
             Back to Furniture
         </Link>
@@ -68,7 +68,7 @@ export default async function FurnitureItemPage({ params }: { params: { id: stri
              <span className="text-sm text-muted-foreground">({item.reviews} reviews)</span>
           </div>
 
-          <p className="text-3xl font-semibold text-primary mb-6">{item.price}</p>
+          <p className="text-3xl font-semibold text-teal-600 mb-6">{item.price}</p>
 
           <p className="text-base mb-6">{item.description}</p>
 
@@ -81,7 +81,7 @@ export default async function FurnitureItemPage({ params }: { params: { id: stri
           </Card>
 
 
-          <Button size="lg" className="w-full md:w-auto">
+          <Button size="lg" className="bg-teal-600 text-white w-full md:w-auto">
             <ShoppingCart className="mr-2 h-5 w-5" /> Add to Cart
           </Button>
           {/* Optional: Add quantity selector */}
@@ -102,7 +102,7 @@ export default async function FurnitureItemPage({ params }: { params: { id: stri
                         <CardTitle className="text-base">Related Item {i}</CardTitle>
                     </CardHeader>
                     <CardContent>
-                        <p className="text-base font-semibold text-primary">$XXX</p>
+                        <p className="text-base font-semibold text-teal-600">$XXX</p>
                     </CardContent>
                 </Card>
             ))}

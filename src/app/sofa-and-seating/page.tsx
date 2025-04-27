@@ -6,14 +6,14 @@ import { Filter } from 'lucide-react';
 
 // Dummy data for sofa and seating items
 const seatingItems = [
-  { id: 101, name: 'Modern Velvet Sofa', price: '$899', category: 'Sofa', image: 'sofa1.jpg', description: 'Luxurious feel with clean lines.' },
-  { id: 102, name: 'Leather Recliner Chair', price: '$649', category: 'Recliner', image: 'recliner1.jpg', description: 'Ultimate relaxation and comfort.' },
-  { id: 103, name: 'Sectional Sofa with Chaise', price: '$1499', category: 'Sectional', image: 'sectional1.jpg', description: 'Spacious seating for the whole family.' },
-  { id: 104, name: 'Mid-Century Armchair', price: '$349', category: 'Armchair', image: 'armchair3.jpg', description: 'Iconic design for a stylish touch.' },
-  { id: 105, name: 'Convertible Sofa Bed', price: '$799', category: 'Sofa Bed', image: 'sofabed1.jpg', description: 'Versatile solution for guests.' },
-  { id: 106, name: 'Linen Loveseat', price: '$599', category: 'Loveseat', image: 'loveseat1.jpg', description: 'Perfect for smaller spaces.' },
-  { id: 107, name: 'Accent Chair with Ottoman', price: '$499', category: 'Accent Chair', image: 'accentchair1.jpg', description: 'Comfortable seating with footrest.' },
-  { id: 108, name: 'Outdoor Patio Sofa', price: '$1199', category: 'Outdoor Sofa', image: 'outdoorsofa1.jpg', description: 'Weather-resistant for your patio.' },
+  { id: 101, name: 'Modern Velvet Sofa', price: '₹899', category: 'Sofa', image: 'sofa1.jpg', description: 'Luxurious feel with clean lines.' },
+  { id: 102, name: 'Leather Recliner Chair', price: '₹649', category: 'Recliner', image: 'recliner1.jpg', description: 'Ultimate relaxation and comfort.' },
+  { id: 103, name: 'Sectional Sofa with Chaise', price: '₹1499', category: 'Sectional', image: 'sectional1.jpg', description: 'Spacious seating for the whole family.' },
+  { id: 104, name: 'Mid-Century Armchair', price: '₹349', category: 'Armchair', image: 'armchair3.jpg', description: 'Iconic design for a stylish touch.' },
+  { id: 105, name: 'Convertible Sofa Bed', price: '₹799', category: 'Sofa Bed', image: 'sofabed1.jpg', description: 'Versatile solution for guests.' },
+  { id: 106, name: 'Linen Loveseat', price: '₹599', category: 'Loveseat', image: 'loveseat1.jpg', description: 'Perfect for smaller spaces.' },
+  { id: 107, name: 'Accent Chair with Ottoman', price: '₹499', category: 'Accent Chair', image: 'accentchair1.jpg', description: 'Comfortable seating with footrest.' },
+  { id: 108, name: 'Outdoor Patio Sofa', price: '₹1199', category: 'Outdoor Sofa', image: 'outdoorsofa1.jpg', description: 'Weather-resistant for your patio.' },
 ];
 
 export default function SofaAndSeatingPage() {
@@ -43,12 +43,12 @@ export default function SofaAndSeatingPage() {
                 />
               </div>
               <CardHeader className="pb-2">
-                <CardTitle className="text-lg group-hover:text-primary transition-colors">{item.name}</CardTitle>
+                <CardTitle className="text-lg group-hover:text-teal-600 transition-colors">{item.name}</CardTitle>
                 <CardDescription className="text-sm pt-1">{item.category}</CardDescription>
               </CardHeader>
               <CardContent className="flex-grow flex flex-col justify-between">
                  <p className="text-sm text-muted-foreground mb-3">{item.description}</p>
-                 <p className="text-lg font-semibold text-primary">{item.price}</p>
+                 <p className="text-lg font-semibold text-teal-600">{item.price}</p>
               </CardContent>
             </Link>
           </Card>

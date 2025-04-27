@@ -41,9 +41,9 @@ export function Header() {
                     <span className="sr-only">Toggle Menu</span>
                   </Button>
                 </SheetTrigger>
-                <SheetContent side="left" className="pr-0 pt-12">
+                <SheetContent side="left" className="pr-0 pt-12" style={{ backgroundColor: '#F5F5F5', paddingLeft: "20px" }}>
                    <Link href="/" className="flex items-center space-x-2 mb-6 px-4">
-                     <Sofa className="h-6 w-6 text-primary" />
+                     <Sofa className="h-6 w-6 text-teal-600" />
                      <span className="font-bold">Vinmin Furnitures</span>
                    </Link>
                    <nav className="flex flex-col space-y-4">
@@ -60,8 +60,8 @@ export function Header() {
                 </SheetContent>
               </Sheet>
           </div>
-          <Link href="/" className="flex items-center space-x-2 md:hidden">
-            <Sofa className="h-6 w-6 text-primary" />
+          <Link href="/" className="flex items-center space-x-2 md:hidden pr-4">
+            <Sofa className="h-6 w-6 text-teal-600" />
             <span className="font-bold">Vinmin</span>
           </Link>
            {/* Optional: Add Search or User Account icons here */}

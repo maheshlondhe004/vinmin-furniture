@@ -8,7 +8,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <Link href="/" className="flex items-center space-x-2 mb-4">
-              <Sofa className="h-6 w-6 text-primary" />
+              <Sofa className="h-6 w-6 text-teal-600" />
               <span className="font-bold text-lg">Vinmin Furnitures</span>
             </Link>
             <p className="text-sm text-secondary-foreground">
@@ -18,17 +18,17 @@ export function Footer() {
           <div>
             <h4 className="font-semibold mb-3 text-secondary-foreground">Quick Links</h4>
             <ul className="space-y-2">
-              <li><Link href="/furniture" className="text-sm hover:text-primary">Furniture</Link></li>
-              <li><Link href="/sofa-and-seating" className="text-sm hover:text-primary">Sofa & Seating</Link></li>
-              <li><Link href="/contact-us" className="text-sm hover:text-primary">Contact Us</Link></li>
+              <li><Link href="/furniture" className="text-sm hover:text-teal-600">Furniture</Link></li>
+              <li><Link href="/sofa-and-seating" className="text-sm hover:text-teal-600">Sofa & Seating</Link></li>
+              <li><Link href="/contact-us" className="text-sm hover:text-teal-600">Contact Us</Link></li>
             </ul>
           </div>
           <div>
             <h4 className="font-semibold mb-3 text-secondary-foreground">Help</h4>
             <ul className="space-y-2">
-               <li><Link href="#" className="text-sm hover:text-primary">FAQ</Link></li>
-               <li><Link href="#" className="text-sm hover:text-primary">Shipping</Link></li>
-               <li><Link href="#" className="text-sm hover:text-primary">Returns</Link></li>
+               <li><Link href="#" className="text-sm hover:text-teal-600">FAQ</Link></li>
+               <li><Link href="#" className="text-sm hover:text-teal-600">Shipping</Link></li>
+               <li><Link href="#" className="text-sm hover:text-teal-600">Returns</Link></li>
             </ul>
           </div>
            <div>

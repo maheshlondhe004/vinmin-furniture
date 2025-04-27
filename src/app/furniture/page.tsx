@@ -6,18 +6,18 @@ import { Filter } from 'lucide-react';
 
 // Expanded dummy data for furniture items
 const furnitureItems = [
-  { id: 1, name: 'Classic Wooden Chair', price: '$199', category: 'Chairs', image: 'chair1.jpg', description: 'Timeless design, solid wood construction.' },
-  { id: 2, name: 'Modern Glass Coffee Table', price: '$299', category: 'Tables', image: 'table1.jpg', description: 'Sleek and contemporary centerpiece.' },
-  { id: 3, name: 'Plush Armchair', price: '$450', category: 'Seating', image: 'armchair1.jpg', description: 'Ultimate comfort with soft upholstery.' },
-  { id: 4, name: 'Minimalist Bookshelf', price: '$350', category: 'Storage', image: 'bookshelf1.jpg', description: 'Display your collection in style.' },
-  { id: 5, name: 'Scandinavian Dining Set', price: '$1200', category: 'Dining', image: 'dining1.jpg', description: 'Seats 4, clean lines, light wood finish.' },
-  { id: 6, name: 'Industrial Style Lamp', price: '$99', category: 'Lighting', image: 'lamp2.jpg', description: 'Adds character to any room.' },
-  { id: 7, name: 'Leather Office Chair', price: '$399', category: 'Office', image: 'officechair1.jpg', description: 'Ergonomic support for long work hours.' },
-  { id: 8, name: 'Rustic Bedside Table', price: '$149', category: 'Bedroom', image: 'bedsidetable1.jpg', description: 'Charming and functional.' },
-   { id: 9, name: 'Velvet Accent Chair', price: '$249', category: 'Chairs', image: 'chair2.jpg', description: 'Adds a pop of color and luxury.' },
-   { id: 10, name: 'Extendable Dining Table', price: '$899', category: 'Tables', image: 'table2.jpg', description: 'Perfect for hosting guests.' },
-   { id: 11, name: 'Cozy Reading Nook Chair', price: '$520', category: 'Seating', image: 'armchair2.jpg', description: 'Sink in and relax with a good book.' },
-   { id: 12, name: 'Floating Wall Shelves', price: '$79', category: 'Storage', image: 'shelf1.jpg', description: 'Modern storage solution.' },
+  { id: 1, name: 'Classic Wooden Chair', price: '₹199', category: 'Chairs', image: 'chair1.jpg', description: 'Timeless design, solid wood construction.' },
+  { id: 2, name: 'Modern Glass Coffee Table', price: '₹299', category: 'Tables', image: 'table1.jpg', description: 'Sleek and contemporary centerpiece.' },
+  { id: 3, name: 'Plush Armchair', price: '₹450', category: 'Seating', image: 'armchair1.jpg', description: 'Ultimate comfort with soft upholstery.' },
+  { id: 4, name: 'Minimalist Bookshelf', price: '₹350', category: 'Storage', image: 'bookshelf1.jpg', description: 'Display your collection in style.' },
+  { id: 5, name: 'Scandinavian Dining Set', price: '₹1200', category: 'Dining', image: 'dining1.jpg', description: 'Seats 4, clean lines, light wood finish.' },
+  { id: 6, name: 'Industrial Style Lamp', price: '₹99', category: 'Lighting', image: 'lamp2.jpg', description: 'Adds character to any room.' },
+  { id: 7, name: 'Leather Office Chair', price: '₹399', category: 'Office', image: 'officechair1.jpg', description: 'Ergonomic support for long work hours.' },
+  { id: 8, name: 'Rustic Bedside Table', price: '₹149', category: 'Bedroom', image: 'bedsidetable1.jpg', description: 'Charming and functional.' },
+   { id: 9, name: 'Velvet Accent Chair', price: '₹249', category: 'Chairs', image: 'chair2.jpg', description: 'Adds a pop of color and luxury.' },
+   { id: 10, name: 'Extendable Dining Table', price: '₹899', category: 'Tables', image: 'table2.jpg', description: 'Perfect for hosting guests.' },
+   { id: 11, name: 'Cozy Reading Nook Chair', price: '₹520', category: 'Seating', image: 'armchair2.jpg', description: 'Sink in and relax with a good book.' },
+   { id: 12, name: 'Floating Wall Shelves', price: '₹79', category: 'Storage', image: 'shelf1.jpg', description: 'Modern storage solution.' },
 ];
 
 export default function FurniturePage() {
@@ -46,12 +46,12 @@ export default function FurniturePage() {
                   />
                 </div>
                 <CardHeader className="pb-2">
-                  <CardTitle className="text-lg group-hover:text-primary transition-colors">{item.name}</CardTitle>
+                  <CardTitle className="text-lg group-hover:text-teal-600 transition-colors">{item.name}</CardTitle>
                   <CardDescription className="text-sm pt-1">{item.category}</CardDescription>
                 </CardHeader>
                 <CardContent className="flex-grow flex flex-col justify-between">
                   <p className="text-sm text-muted-foreground mb-3">{item.description}</p>
-                  <p className="text-lg font-semibold text-primary">{item.price}</p>
+                  <p className="text-lg font-semibold text-teal-600">{item.price}</p>
                 </CardContent>
              </Link>
           </Card>

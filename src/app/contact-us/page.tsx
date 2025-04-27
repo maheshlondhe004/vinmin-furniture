@@ -142,21 +142,21 @@ export default function ContactUsPage() {
              </CardHeader>
               <CardContent className="space-y-4">
                  <div className="flex items-start space-x-4">
-                    <MapPin className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
+                    <MapPin className="h-6 w-6 text-teal-600 mt-1 flex-shrink-0" />
                     <div>
                       <h3 className="font-semibold">Address</h3>
                       <p className="text-muted-foreground">123 Furniture Lane, Cityville, ST 12345</p>
                     </div>
                  </div>
                  <div className="flex items-start space-x-4">
-                    <Phone className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
+                    <Phone className="h-6 w-6 text-teal-600 mt-1 flex-shrink-0" />
                     <div>
                        <h3 className="font-semibold">Phone</h3>
                        <p className="text-muted-foreground">(123) 456-7890</p>
                     </div>
                  </div>
                  <div className="flex items-start space-x-4">
-                   <Mail className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
+                   <Mail className="h-6 w-6 text-teal-600 mt-1 flex-shrink-0" />
                     <div>
                        <h3 className="font-semibold">Email</h3>
                        <p className="text-muted-foreground">info@vinmin.com</p>
